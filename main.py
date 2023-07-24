@@ -25,8 +25,6 @@ class Record:
                 self.phones.remove(ph)
 
     def edit_phone(self, old_phone: str, new_phone: str):
-        #result = list(filter(lambda contact: contact.get("id") == id, self.data))
-        #return result[0] if len(result) > 0 else None
         for phone in self.phones:
             if old_phone == phone.value:
                 phone.value = new_phone
