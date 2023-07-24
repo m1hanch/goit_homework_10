@@ -10,10 +10,10 @@ class Name(Field):
         self.value = name
 
 class Record:
-    def __init__(self, Name: Name, *phone: Phone):
+    def __init__(self, name: Name, *phone: Phone):
         if len(phone)==0:
             phone = []
-        self.name = Name
+        self.name = name
         self.phones = list(phone)
 
     def add_phone(self, phone: Phone):
